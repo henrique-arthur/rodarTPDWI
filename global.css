@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url(//db.onlinewebfonts.com/c/00370d92f1b404768d34ac7dc664289e?family=Sansation);
+
+*{
+   margin: 0;
+   padding: 0;
+   outline: 0;
+   box-sizing: border-box;
+}
+
+/* html {
+   font-size: 62.5%;
+} */
+
+body{
+    font: 400 14px Roboto, sans-serif;
+    color: #474554;
+    background: #FFF4F7;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    /* font-size: 1.6rem; */
+}
+a:link {
+   text-decoration: none;
+}
+
+/* a:hover {
+   color: #F27D8E;
+   transition: 0.3s;
+}  */
+
+ul {
+   list-style-type: none;
+}
+
+::-webkit-input-placeholder {
+    font-weight: 500;
+    font-size: 16px;
+    color: #8C8C8C;
+  }

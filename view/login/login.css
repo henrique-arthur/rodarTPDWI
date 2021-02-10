@@ -1,0 +1,138 @@
+.container {
+    width: 100%;
+    /* max-width: 1120px; */
+    height: 100vh;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    /* align-self: center; */
+}
+
+.logo {
+    font: 400 24px Sansation, sans-serif;
+    background-color: #F6F6F8;
+    width: 30%;
+    position: relative;
+}
+
+.logo .titulo{
+    margin-top: 40%;
+    font-size: 90px;
+}
+
+.titulo, .subtitulo {
+    text-align: center;
+}
+
+
+.logo img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.container-box {
+    margin: auto;
+}
+
+.box {
+    filter: drop-shadow(5px 5px 30px rgba(0, 0, 0, 0.15));
+}
+
+.box h1 {
+    margin-bottom: 48px;
+}
+
+.box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.box .erro{
+    color: #b33a3a;
+    text-align: center;
+    display: none;
+}
+
+.entrada {
+    width: 314px;
+    height: 50px;
+    border-width: 0px;
+}
+
+.entrarCampos {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 16px;
+    background: #D2C3CB;
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    border-radius: 4px;
+}
+
+.entrarBotao {
+    cursor: pointer;
+    background-color: #F45B69;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 15px;
+    margin-bottom: 13px;
+    transition: ease-in-out, .35s ease-in-out;
+}
+
+.entrarBotao:hover {
+    background-color: #00A9C4;
+}
+
+.checkbox {
+    margin-bottom: 30px;
+}
+
+.cadastro {
+    text-align: center;
+}
+
+.linkCadastro {
+    cursor: pointer;
+    color: #474554;
+    transition: ease-in-out, .35s ease-in-out;
+}
+
+.linkCadastro:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+#formLogin {
+    display: block;
+    /* transition: ease-in-out, .35s ease-in-out; */
+    transition: 5s;
+}
+
+#formCadastro {
+    display: none;
+    transition: 5s;
+    /* transition: ease-in-out, .35s ease-in-out; */
+}
+
+
+/* FORM DE CADASTRO */
+
+.tituloForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tituloForm span {
+    margin-bottom: 48px;
+    cursor: pointer;
+    transition: ease-in-out, .35s ease-in-out;
+}
+
+.tituloForm span:hover {
+    color: #F13030;
+}
