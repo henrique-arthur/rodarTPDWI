@@ -1,6 +1,4 @@
 <?php
-require_once '../services/dbcon.php';
-
 
 class usuario {
     private $idUsuario;

@@ -7,7 +7,3 @@ function entrarCadastro(){
     document.getElementById("formLogin").style.display = "none";
     document.getElementById("formCadastro").style.display = "block";
 }
-
-function verificarCampos(){
-    alert('paro');
-}
