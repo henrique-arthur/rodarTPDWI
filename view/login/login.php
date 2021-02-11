@@ -8,7 +8,7 @@
     <link href="../../global.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script type="text/javascript" src="login.js"></script>
-    <title>Rodar | Aluguél de Veículos</title>
+    <title>Rodar | Aluguel de Veículos</title>
 </head>
 <body>
     <?php
@@ -21,7 +21,7 @@
     ?>
     <div class="container">
         <div class="logo">
-            <p class="titulo">Rodar</p>
+            <p class="titulo">RODAR</p>
             <p class="subtitulo">Aluguel de Veículos</p>
             <img src="../../assets/carrologin.png" alt="" sizes="" srcset="">
         </div>
@@ -55,7 +55,7 @@
                     <input class="entrada entrarCampos" type="text" name="email" placeholder="Email">
                     <input class="entrada entrarCampos" type="password" name="senha" placeholder="Senha">
                     <input class="entrada entrarCampos" type="password" name="senhaRepetir" placeholder="Senha">
-                    <p class="erro" style="display:<?php echo $e ?>;">Os dados estão incorretos.</p>
+                    <p class="erro" id="erro" style="display:<?php echo $e ?>;">Os dados estão incorretos.</p>
                     <input class="entrada entrarBotao" type="submit" name="enviar" value="Criar Conta">
                 </form>
             </div>
