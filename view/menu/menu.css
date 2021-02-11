@@ -46,4 +46,24 @@ body {
 .nav .nav-direita {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.nav .nav-direita .perfil {
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-direita span {
+    font-size: 32px;
+}
+
+.nav-direita span:first-child {
+    padding-right: 8px;
+}
+
+.nav-direita p {
+    font-size: 14px;
 }

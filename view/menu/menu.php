@@ -17,7 +17,17 @@
   {
     unset($_SESSION['email']);
     unset($_SESSION['senha']);
-    }
+  }
+
+  $nomeUsuario[1] = null;
+  $nomeUsuario = explode( ' ', $_SESSION['nome'], 3);
+
+  if(!isset($nomeUsuario[0]) || !isset($nomeUsuario[1])){
+    $nomePerfil = $nomeUsuario[0];
+  }else{
+    $nomePerfil = $nomeUsuario[0] .' '. $nomeUsuario[1];
+  }
+  
   ?>
 
   <div class="nav">
@@ -33,7 +43,7 @@
         <span class="material-icons">
           account_circle
         </span>
-        <p><?php echo $_SESSION['nome'] ?></p>
+        <p><?php echo $nomePerfil?></p>
       </div>
       <div class="sair">
         <span class="material-icons">
