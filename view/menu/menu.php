@@ -39,21 +39,231 @@
       <input class="" name="buscar" placeholder="Buscar veículos">
     </div>
     <div class="nav-direita">
-      <div class="perfil">
+      <a class="perfil" href="#">
         <span class="material-icons">
           account_circle
         </span>
         <p><?php echo $nomePerfil?></p>
-      </div>
-      <div class="sair">
+      </a>
+      <a class="sair" href="../login/login.php">
         <span class="material-icons">
           logout
         </span>
-      </div>
+      </a>
     </div>
   </div>
+  
+  <div class="lista">
+    <div class="elemento">
+      <div class="left-content">
+        <img class="imgCarro" src="../../assets/veiculos/polo.png" alt="" srcset="">
+        <div class="retire">
+          <p>RETIRE NA HORA</p>
+        </div>
+        <input class="alugarBtn" type="submit" name="enviar" value="ALUGAR">
+      </div>
+      <div class="right-content">
+        <div class="top-content">
+          <div class="nomeVeiculo">
+            <p>Wolksvagen Polo 2020</p>
+          </div>
+          <div class="info">
+          <div class="left-info">
+            <div class="tipoCambio">
+              <img src="../../assets/icons/gearbox.svg" alt="" srcset="">
+              <p>Automático</p>
+            </div>
+            <div class="qtdPortas">
+            <img src="../../assets/icons/door.svg" alt="" srcset="">
+              <p>4 Portas</p>
+            </div>
+          </div>
+          <div class="right-info">
+            <div class="cor">
+            <img src="../../assets/icons/paint.svg" alt="" srcset="">
+              <p>Roxo</p>
+            </div>
+            <div class="tipoCombustivel">
+            <img src="../../assets/icons/gas.svg" alt="" srcset="">
+              <p>Gasolina</p>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="bottom-content">
+          <p>R$ 135,00/dia</p>
+        </div>
+      </div>
+    </div>
 
+    <div class="elemento">
+      <div class="left-content">
+        <img class="imgCarro" src="../../assets/veiculos/polo.png" alt="" srcset="">
+        <div class="retire">
+          <p>RETIRE NA HORA</p>
+        </div>
+        <input class="alugarBtn" type="submit" name="enviar" value="ALUGAR">
+      </div>
+      <div class="right-content">
+        <div class="top-content">
+          <div class="nomeVeiculo">
+            <p>Wolksvagen Polo 2020</p>
+          </div>
+          <div class="info">
+          <div class="left-info">
+            <div class="tipoCambio">
+              <img src="../../assets/icons/gearbox.svg" alt="" srcset="">
+              <p>Automático</p>
+            </div>
+            <div class="qtdPortas">
+            <img src="../../assets/icons/door.svg" alt="" srcset="">
+              <p>4 Portas</p>
+            </div>
+          </div>
+          <div class="right-info">
+            <div class="cor">
+            <img src="../../assets/icons/paint.svg" alt="" srcset="">
+              <p>Roxo</p>
+            </div>
+            <div class="tipoCombustivel">
+            <img src="../../assets/icons/gas.svg" alt="" srcset="">
+              <p>Gasolina</p>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="bottom-content">
+          <p>R$ 135,00/dia</p>
+        </div>
+      </div>
+    </div>
 
+    <div class="elemento">
+      <div class="left-content">
+        <img class="imgCarro" src="../../assets/veiculos/polo.png" alt="" srcset="">
+        <div class="retire">
+          <p>RETIRE NA HORA</p>
+        </div>
+        <input class="alugarBtn" type="submit" name="enviar" value="ALUGAR">
+      </div>
+      <div class="right-content">
+        <div class="top-content">
+          <div class="nomeVeiculo">
+            <p>Wolksvagen Polo 2020</p>
+          </div>
+          <div class="info">
+          <div class="left-info">
+            <div class="tipoCambio">
+              <img src="../../assets/icons/gearbox.svg" alt="" srcset="">
+              <p>Automático</p>
+            </div>
+            <div class="qtdPortas">
+            <img src="../../assets/icons/door.svg" alt="" srcset="">
+              <p>4 Portas</p>
+            </div>
+          </div>
+          <div class="right-info">
+            <div class="cor">
+            <img src="../../assets/icons/paint.svg" alt="" srcset="">
+              <p>Roxo</p>
+            </div>
+            <div class="tipoCombustivel">
+            <img src="../../assets/icons/gas.svg" alt="" srcset="">
+              <p>Gasolina</p>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="bottom-content">
+          <p>R$ 135,00/dia</p>
+        </div>
+      </div>
+    </div>
 
+    <div class="elemento">
+      <div class="left-content">
+        <img class="imgCarro" src="../../assets/veiculos/polo.png" alt="" srcset="">
+        <div class="retire">
+          <p>RETIRE NA HORA</p>
+        </div>
+        <input class="alugarBtn" type="submit" name="enviar" value="ALUGAR">
+      </div>
+      <div class="right-content">
+        <div class="top-content">
+          <div class="nomeVeiculo">
+            <p>Wolksvagen Polo 2020</p>
+          </div>
+          <div class="info">
+          <div class="left-info">
+            <div class="tipoCambio">
+              <img src="../../assets/icons/gearbox.svg" alt="" srcset="">
+              <p>Automático</p>
+            </div>
+            <div class="qtdPortas">
+            <img src="../../assets/icons/door.svg" alt="" srcset="">
+              <p>4 Portas</p>
+            </div>
+          </div>
+          <div class="right-info">
+            <div class="cor">
+            <img src="../../assets/icons/paint.svg" alt="" srcset="">
+              <p>Roxo</p>
+            </div>
+            <div class="tipoCombustivel">
+            <img src="../../assets/icons/gas.svg" alt="" srcset="">
+              <p>Gasolina</p>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="bottom-content">
+          <p>R$ 135,00/dia</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="elemento">
+      <div class="left-content">
+        <img class="imgCarro" src="../../assets/veiculos/polo.png" alt="" srcset="">
+        <div class="retire">
+          <p>RETIRE NA HORA</p>
+        </div>
+        <input class="alugarBtn" type="submit" name="enviar" value="ALUGAR">
+      </div>
+      <div class="right-content">
+        <div class="top-content">
+          <div class="nomeVeiculo">
+            <p>Wolksvagen Polo 2020</p>
+          </div>
+          <div class="info">
+          <div class="left-info">
+            <div class="tipoCambio">
+              <img src="../../assets/icons/gearbox.svg" alt="" srcset="">
+              <p>Automático</p>
+            </div>
+            <div class="qtdPortas">
+            <img src="../../assets/icons/door.svg" alt="" srcset="">
+              <p>4 Portas</p>
+            </div>
+          </div>
+          <div class="right-info">
+            <div class="cor">
+            <img src="../../assets/icons/paint.svg" alt="" srcset="">
+              <p>Roxo</p>
+            </div>
+            <div class="tipoCombustivel">
+            <img src="../../assets/icons/gas.svg" alt="" srcset="">
+              <p>Gasolina</p>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="bottom-content">
+          <p>R$ 135,00/dia</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </body>
 </html>

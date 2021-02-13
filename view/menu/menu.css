@@ -35,6 +35,7 @@ body {
 
 .nav .buscar .buscarIcone{
     padding-right: 13px;
+    color: #8C8C8C;
 }
 
 .nav .buscar input {
@@ -66,4 +67,121 @@ body {
 
 .nav-direita p {
     font-size: 14px;
+}
+
+a {
+    color: #8C8C8C;
+    transition: ease-in-out, .2s ease-in-out;
+}
+
+a:hover{
+    color: #474554;
+
+}
+
+.lista {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(560px, 560px));
+    grid-row-gap: 40px;
+    grid-column-gap: 75px;
+    justify-content: center;
+    text-align: center;
+    padding: 70px 0px 70px 0px;
+}
+
+/* AQUI COMEÇA A LISTA */
+
+.elemento {
+    background: #FFFFFF;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.left-content {
+    font-weight: bold;
+}
+
+.left-content .imgCarro {
+    padding-left: 13px;
+}
+
+.left-content .retire {
+    background-color: #4D54FF;
+    color: #fff;
+    font-size: 16px;
+    padding: 4px 0px 4px 0px;
+}
+
+.left-content .alugarBtn {
+    cursor: pointer;
+
+    background: #42BE42;
+    border-radius: 0px 0px 0px 8px; 
+    border-width: 0px;
+    width: 100%;
+}
+
+.left-content .alugarBtn:hover {
+    transition: ease-in-out, .2s ease-in-out;
+    background-color: #007400;
+}
+
+.left-content .alugarBtn[value=ALUGAR] {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
+
+    padding: 23px 33px 23px 33px;
+
+}
+
+.elemento .right-content {
+    padding-top: 28px;
+    padding-left: 55px;
+    
+    color: #474554;
+}
+
+.elemento .right-content .top-content .nomeVeiculo p{
+    font-weight: 500;
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+/* .elemento .right-content .left-info,  */
+.elemento .right-content .info,
+.elemento .right-content .tipoCambio,
+.elemento .right-content .qtdPortas,
+.elemento .right-content .cor,
+.elemento .right-content .tipoCombustivel
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.elemento .right-content .top-content {
+    padding-bottom: 55px;
+}
+.elemento .right-content .left-info {
+    padding-right: 35px;
+}
+
+.elemento .right-content .info img {
+    padding-right: 8px;
+}
+
+.elemento .right-content .bottom-content {
+    font-weight: bold;
+    font-size: 36px;
+    padding-bottom: 20px;
+}
+
+.elemento .right-content .tipoCambio, .elemento .right-content .cor {
+    padding-bottom: 20px;
 }
