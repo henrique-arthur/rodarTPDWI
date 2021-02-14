@@ -56,7 +56,7 @@
   <div class="lista">
     <div class="elemento">
       <div class="left-content">
-        <img class="imgCarro" src="../../assets/veiculos/polo.png" alt="" srcset="">
+        <img class="imgCarro" src="../../assets/veiculos/chevrolet_s10_28.png" alt="" srcset="">
         <div class="retire">
           <p>RETIRE NA HORA</p>
         </div>
@@ -98,7 +98,7 @@
 
     <div class="elemento">
       <div class="left-content">
-        <img class="imgCarro" src="../../assets/veiculos/polo.png" alt="" srcset="">
+        <img class="imgCarro" src="../../assets/veiculos/fiatuno1.png" alt="" srcset="">
         <div class="retire">
           <p>RETIRE NA HORA</p>
         </div>
@@ -140,7 +140,7 @@
 
     <div class="elemento">
       <div class="left-content">
-        <img class="imgCarro" src="../../assets/veiculos/polo.png" alt="" srcset="">
+        <img class="imgCarro" src="../../assets/veiculos/fiattoro18.png" alt="" srcset="">
         <div class="retire">
           <p>RETIRE NA HORA</p>
         </div>
@@ -182,7 +182,7 @@
 
     <div class="elemento">
       <div class="left-content">
-        <img class="imgCarro" src="../../assets/veiculos/polo.png" alt="" srcset="">
+        <img class="imgCarro" src="../../assets/veiculos/toyotacorolaglifast.png" alt="" srcset="">
         <div class="retire">
           <p>RETIRE NA HORA</p>
         </div>
@@ -224,7 +224,7 @@
 
     <div class="elemento">
       <div class="left-content">
-        <img class="imgCarro" src="../../assets/veiculos/polo.png" alt="" srcset="">
+        <img class="imgCarro" src="../../assets/veiculos/fordfusion.png" alt="" srcset="">
         <div class="retire">
           <p>RETIRE NA HORA</p>
         </div>
