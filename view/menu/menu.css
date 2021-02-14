@@ -107,6 +107,7 @@ a:hover{
 
 .left-content .imgCarro {
     padding-left: 13px;
+    max-height: 148px;
 }
 
 .left-content .retire {

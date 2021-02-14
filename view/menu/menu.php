@@ -54,7 +54,8 @@
   </div>
   
   <div class="lista">
-    <div class="elemento">
+  <?php require '../../controller/menuController.php' ?>
+    <!-- <div class="elemento">
       <div class="left-content">
         <img class="imgCarro" src="../../assets/veiculos/chevrolet_s10_28.png" alt="" srcset="">
         <div class="retire">
@@ -182,7 +183,7 @@
 
     <div class="elemento">
       <div class="left-content">
-        <img class="imgCarro" src="../../assets/veiculos/toyotacorolaglifast.png" alt="" srcset="">
+        <img class="imgCarro" src="../../assets/veiculos/148/lamborghini_huracan.png" alt="" srcset="">
         <div class="retire">
           <p>RETIRE NA HORA</p>
         </div>
@@ -224,7 +225,7 @@
 
     <div class="elemento">
       <div class="left-content">
-        <img class="imgCarro" src="../../assets/veiculos/fordfusion.png" alt="" srcset="">
+        <img class="imgCarro" src="../../assets/veiculos/148/bmw_m4_coupe.png" alt="" srcset="">
         <div class="retire">
           <p>RETIRE NA HORA</p>
         </div>
@@ -262,7 +263,7 @@
           <p>R$ 135,00/dia</p>
         </div>
       </div>
-    </div>
+    </div> -->
 
   </div>
 </body>
