@@ -142,16 +142,18 @@ a:hover{
 }
 
 .elemento .right-content {
-    padding-top: 28px;
-    padding-left: 55px;
-    
+    margin: auto;
     color: #474554;
 }
 
 .elemento .right-content .top-content .nomeVeiculo p{
-    font-weight: 500;
+    font-weight: 600;
     font-size: 24px;
     padding-bottom: 20px;
+}
+
+.elemento .nomeVeiculo {
+    text-align: left;
 }
 
 /* .elemento .right-content .left-info,  */
@@ -180,7 +182,7 @@ a:hover{
 .elemento .right-content .bottom-content {
     font-weight: bold;
     font-size: 36px;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
 }
 
 .elemento .right-content .tipoCambio, .elemento .right-content .cor {

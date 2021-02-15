@@ -14,20 +14,18 @@
     try{
         $conexao = new conexao();
         $con = new PDO($conexao->dsn, $conexao->user, $conexao->pass);
-        $sql= $con->prepare("SELECT idVeiculo, nome, marca, ano, cor, cambio, portas, combustível, placa, descricao, valor, img FROM veiculo");
+        $sql= $con->prepare("SELECT idVeiculo, nome, marca, ano, cor, cambio, portas, combustivel, placa, descricao, valor, img FROM veiculo");
         $sql->execute();
 
         if($sql->rowCount() > 0){
             $query = $sql->fetchAll(PDO::FETCH_ASSOC);
 
-            $qr = $query;
-            var_dump($query[0]['img']);
-            while (list ($idVeiculo, $nome, $marca, $ano, $cor, $cambio, $portas, $combustível, $placa, $descricao, $valor, $img) = $query) {
+            foreach($query as $linha) {
                 echo 
                 "
                 <div class='elemento'>
                     <div class='left-content'>
-                    <img class='imgCarro' src='$img' alt=' srcset='>
+                    <img class='imgCarro' src=". $linha['img'] ." alt=' srcset='>
                     <div class='retire'>
                         <p>RETIRE NA HORA</p>
                     </div>
@@ -36,33 +34,33 @@
                     <div class='right-content'>
                     <div class='top-content'>
                         <div class='nomeVeiculo'>
-                        <p>'$marca'</p>
+                        <p>". strtoupper($linha['marca']. ' ' . $linha['nome']) ."</p>
                         </div>
                         <div class='info'>
                         <div class='left-info'>
                         <div class='tipoCambio'>
                             <img src='../../assets/icons/gearbox.svg' alt=' srcset='>
-                            <p>$cambio</p>
+                            <p>". $linha['cambio']."</p>
                         </div>
                         <div class='qtdPortas'>
                         <img src='../../assets/icons/door.svg' alt=' srcset='>
-                            <p>$portas Portas</p>
+                            <p>". $linha['portas']." Portas</p>
                         </div>
                         </div>
                         <div class='right-info'>
                         <div class='cor'>
                         <img src='../../assets/icons/paint.svg' alt=' srcset='>
-                            <p>$cor</p>
+                            <p>". $linha['cor']."</p>
                         </div>
                         <div class='tipoCombustivel'>
                         <img src='../../assets/icons/gas.svg' alt=' srcset='>
-                            <p>$combustível</p>
+                            <p>". $linha['combustivel']."</p>
                         </div>
                         </div>
                         </div>
                     </div>
                     <div class='bottom-content'>
-                        <p>";formatarValor($valor); "</p>
+                        <p>".formatarValor($linha['valor']) ."</p>
                     </div>
                 </div>
                 </div>
