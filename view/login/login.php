@@ -21,8 +21,10 @@
     ?>
     <div class="container">
         <div class="logo">
-            <p class="titulo">RODAR</p>
-            <p class="subtitulo">Aluguel de Veículos</p>
+            <div class="texto">
+                <p class="titulo">RODAR</p>
+                <p class="subtitulo">Aluguel de Veículos</p>
+            </div>
             <img src="../../assets/carrologin.png" alt="" sizes="" srcset="">
         </div>
         <div class="container-box">

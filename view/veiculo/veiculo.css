@@ -9,72 +9,132 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 15px;
+    padding: 15px 0px 70px 0px;
 }
 
 .nav .titulo {
     font: 400 50px Sansation, sans-serif;
-} 
-
-.nav .buscar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    width: 500px;
-    height: 44px;
-
-    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.25);
-
-    background-color: #fff;
-    border-radius: 20px;
-    border-width: 0px;
-
-    padding: 0px 24px 0px 8px;
-}
-
-.nav .buscar .buscarIcone{
-    padding-right: 13px;
-    color: #8C8C8C;
-}
-
-.nav .buscar input {
-    border: 0;
-    width: 100%;
-    font-size: 16px;
-}
-
-.nav .nav-direita {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-}
-
-.nav .nav-direita .perfil {
-    padding-right: 50px;
-    display: flex;
-    align-items: center;
-}
-
-.nav-direita span {
-    font-size: 32px;
-}
-
-.nav-direita span:first-child {
-    padding-right: 8px;
-}
-
-.nav-direita p {
-    font-size: 14px;
 }
 
 a {
-    color: #8C8C8C;
+    color: #474554;
     transition: ease-in-out, .2s ease-in-out;
 }
 
-a:hover{
+.voltarIcon {
+    font-size: 28px;
+}
+
+/* COMEÇO DO PRIMEIRO CARD */
+
+
+.elemento {
+    background: #FFFFFF;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.left-content {
+    font-weight: bold;
+    text-align: center;
+    width: 50%;
+}
+
+.left-content .imgCarro {
+    padding-left: 13px;
+    max-height: 330px;
+}
+
+.left-content .retire {
+    background-color: #4D54FF;
+    color: #fff;
+    font-size: 16px;
+    padding: 4px 0px 4px 0px;
+}
+
+.left-content .alugarTexto:hover {
+    transition: ease-in-out, .2s ease-in-out;
+    background-color: #007400;
+}
+
+.left-content .alugarTexto {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
+    background-color: #42BE42;
+    padding: 23px 33px 23px 33px;
+    border-radius: 0px 0px 0px 8px;
+    padding: 23px 33px 23px 33px;
+}
+
+.elemento .right-content {
+    margin:  40px auto 20px auto;
     color: #474554;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.elemento .right-content .top-content .nomeVeiculo p{
+    font-weight: 600;
+    font-size: 48px;
+    padding-bottom: 20px;
+}
+
+.elemento .nomeVeiculo {
+    text-align: left;
+}
+
+/* .elemento .right-content .left-info,  */
+.elemento .right-content .info
+{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.elemento .right-content .tipoCambio,
+.elemento .right-content .qtdPortas,
+.elemento .right-content .cor,
+.elemento .right-content .tipoCombustivel
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* .elemento .right-content .top-content {
+    padding-bottom: 55px;
+} */
+.elemento .right-content .left-info {
+    padding-right: 35px;
+}
+
+.elemento .right-content .info {
+    font-size: 28px;
+
+}
+
+.elemento .right-content .info img {
+    padding-right: 8px;
+}
+
+.elemento .right-content .bottom-content {
+    font-weight: bold;
+    font-size: 72px;
+    text-align: center;
+}
+
+.elemento .right-content .tipoCambio, .elemento .right-content .cor {
+    padding-bottom: 20px;
+}
+
+
+/* FIM DO PRIMEIRO CARD */

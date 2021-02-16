@@ -13,8 +13,12 @@
 .logo {
     font: 400 24px Sansation, sans-serif;
     background-color: #F6F6F8;
-    width: 30%;
-    position: relative;
+    /* width: 30%; */
+
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .logo .titulo{
@@ -28,9 +32,9 @@
 
 
 .logo img {
-    width: 100%;
-    position: absolute;
-    left: 0;
+    /* width: 100%; */
+    margin-bottom: 20%;
+    transform: scaleX(-1);
 }
 
 .container-box {
