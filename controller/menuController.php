@@ -29,7 +29,9 @@
                     <div class='retire'>
                         <p>RETIRE NA HORA</p>
                     </div>
-                    <input class='alugarBtn' type='submit' name='enviar' value='ALUGAR'>
+                    <a class='alugarBtn' href='../veiculo/veiculo.php?id=". $linha['idVeiculo'] ."'>
+                        <div class='alugarTexto'>ALUGAR</div>
+                    </a>
                     </div>
                     <div class='right-content'>
                     <div class='top-content'>

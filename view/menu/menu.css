@@ -117,28 +117,29 @@ a:hover{
     padding: 4px 0px 4px 0px;
 }
 
-.left-content .alugarBtn {
+/* .left-content .alugarBtn {
     cursor: pointer;
 
-    background: #42BE42;
+    background-color: #42BE42;
     border-radius: 0px 0px 0px 8px; 
     border-width: 0px;
     width: 100%;
-}
+} */
 
-.left-content .alugarBtn:hover {
+.left-content .alugarTexto:hover {
     transition: ease-in-out, .2s ease-in-out;
     background-color: #007400;
 }
 
-.left-content .alugarBtn[value=ALUGAR] {
+.left-content .alugarTexto {
     font-weight: bold;
     font-size: 36px;
     line-height: 42px;
     color: #FFFFFF;
-
+    background-color: #42BE42;
     padding: 23px 33px 23px 33px;
-
+    border-radius: 0px 0px 0px 8px;
+    padding: 23px 33px 23px 33px;
 }
 
 .elemento .right-content {
