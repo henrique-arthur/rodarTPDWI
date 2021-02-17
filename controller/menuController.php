@@ -22,15 +22,19 @@
                 echo 
                 "
                 <div class='elemento'>
-                    <div class='left-content'>
-                    <img class='imgCarro' src=". $linha['img'] ." alt=' srcset='>
-                    <div class='retire'>
+                <div class='left-content'>
+                    <div class='top-left-content'>
+                        <img class='imgCarro' src=". $linha['img'] ." alt=' srcset='>
+                    </div>
+                    <div class='retirebotao'>
+                        <div class='retire'>
                         <p>RETIRE NA HORA</p>
                     </div>
                     <a class='alugarBtn' href='../veiculo/veiculo.php?id=". $linha['idVeiculo'] ."'>
                         <div class='alugarTexto'>ALUGAR</div>
                     </a>
                     </div>
+                </div>
                     <div class='right-content'>
                     <div class='top-content'>
                         <div class='nomeVeiculo'>

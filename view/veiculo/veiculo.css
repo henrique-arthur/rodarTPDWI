@@ -44,11 +44,29 @@ a {
     font-weight: bold;
     text-align: center;
     width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center
+}
+
+.left-content .top-left-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 .left-content .imgCarro {
-    padding-left: 13px;
     max-height: 330px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.left-content .retirebotao {
+    width: 100%;
 }
 
 .left-content .retire {
@@ -113,9 +131,6 @@ a {
     align-items: center;
 }
 
-/* .elemento .right-content .top-content {
-    padding-bottom: 55px;
-} */
 .elemento .right-content .left-info {
     padding-right: 35px;
 }
@@ -166,4 +181,65 @@ a {
     grid-column-gap: 75px;
     justify-content: center;
     text-align: center;
+}
+
+.confirm-container {
+    display: none;
+    background: #FFFFFF;
+    box-shadow: 6px 6px 20px rgb(0 0 0 / 25%);
+    border-radius: 8px;
+    padding: 40px 60px 80px 60px;
+    z-index: 9;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.confirm-container form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.div-voltar {
+    width: 100%;
+    text-align: right;
+    padding-bottom: 40px;
+}
+
+.titulo {
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+
+.entrarCampos {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 16px;
+    background: #D2C3CB;
+    border-radius: 4px;
+}
+
+.entrada {
+    width: 314px;
+    height: 50px;
+    border-width: 0px;
+    font: 400 14px Roboto, sans-serif;
+}
+
+.entrarBotao {
+    margin-top: 15px;
+    background-color: #42BE42;
+    color: #fff;
+
+    font-size: 16px;
+
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.sair {
+    cursor: pointer;
 }

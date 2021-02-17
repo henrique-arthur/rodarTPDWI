@@ -8,7 +8,6 @@
     <link href="../../global.css" rel="stylesheet">
     <link href="menu.css" rel="stylesheet">
     <title>Rodar | Aluguel de Veículos</title>
-    <title>Document</title>
 </head>
 <body>
   <?php
@@ -55,16 +54,20 @@
   
   <div class="lista">
     <?php require '../../controller/menuController.php' ?>
-
+    
     <!-- <div class="elemento">
         <div class="left-content">
-          <img class="imgCarro" src="../../assets/veiculos/chevrolet_s10_28.png" alt="" srcset="">
-          <div class="retire">
-            <p>RETIRE NA HORA</p>
+          <div class="top-left-content">
+            <img class="imgCarro" src="../../assets/veiculos/chevrolet_s10_28.png" alt="" srcset="">
           </div>
-          <a class="alugarBtn" href="#">
-            <div class="alugarTexto">ALUGAR</div>
-          </a>
+          <div class='retirebotao'>
+            <div class='retire'>
+                <p>RETIRE NA HORA</p>
+            </div>
+            <a class='alugarBtn' href='#'>
+                <div class='alugarTexto'>ALUGAR</div>
+            </a>
+        </div>
         </div>
         <div class="right-content">
           <div class="top-content">
@@ -99,6 +102,7 @@
           </div>
         </div>
       </div> -->
+
       
   </div>
 </body>

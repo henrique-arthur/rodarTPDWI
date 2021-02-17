@@ -31,8 +31,8 @@
             <div class="box" id="formLogin">
                 <h1>Entrar</h1>
                 <form class="formulario" action="../../controller/loginController.php" method="post">
-                    <input class="entrada entrarCampos" type="text" name="email" placeholder="Email">
-                    <input class="entrada entrarCampos" type="password" name="senha" placeholder="Senha">
+                    <input class="entrada entrarCampos" type="text" name="email" placeholder="Email" required>
+                    <input class="entrada entrarCampos" type="password" name="senha" placeholder="Senha" required>
                     <p class="erro" style="display:<?php echo $e ?>;">Os dados estão incorretos.</p>
                     <input class="entrada entrarBotao" type="submit" name="enviar" value="Entrar">  
                     <div class="checkbox">
@@ -53,10 +53,10 @@
                     </span>
                 </div>
                 <form class="formulario" action="../../controller/cadastroController.php" method="post">
-                    <input class="entrada entrarCampos" type="text" name="nome" placeholder="Nome completo">
-                    <input class="entrada entrarCampos" type="text" name="email" placeholder="Email">
-                    <input class="entrada entrarCampos" type="password" name="senha" placeholder="Senha">
-                    <input class="entrada entrarCampos" type="password" name="senhaRepetir" placeholder="Senha">
+                    <input class="entrada entrarCampos" type="text" name="nome" placeholder="Nome completo" required>
+                    <input class="entrada entrarCampos" type="text" name="email" placeholder="Email" required>
+                    <input class="entrada entrarCampos" type="password" name="senha" placeholder="Senha" required>
+                    <input class="entrada entrarCampos" type="password" name="senhaRepetir" placeholder="Senha" required>
                     <p class="erro" id="erro" style="display:<?php echo $e ?>;">Os dados estão incorretos.</p>
                     <input class="entrada entrarBotao" type="submit" name="enviar" value="Criar Conta">
                 </form>

@@ -19,17 +19,22 @@ function carregarVeiculo(){
 
             $descricaoArr = explode( ',', $query[0]['descricao'], 100);
 
+            
             echo 
             "
             <div class='elemento'>
                 <div class='left-content'>
-                <img class='imgCarro' src=". $query[0]['img'] ." alt=' srcset='>
-                <div class='retire'>
-                    <p>RETIRE NA HORA</p>
-                </div>
-                <a class='alugarBtn' onclick='alugar()' href='#'>
-                    <div class='alugarTexto'>ALUGAR</div>
-                </a>
+                    <div class='top-left-content'>
+                        <img class='imgCarro' src=". $query[0]['img'] ." alt=' srcset='>
+                    </div>
+                    <div class='retirebotao'>
+                        <div class='retire'>
+                        <p>RETIRE NA HORA</p>
+                    </div>
+                    <a class='alugarBtn' onclick='alugar()' href='#'>
+                        <div class='alugarTexto'>ALUGAR</div>
+                    </a>
+                    </div>
                 </div>
                 <div class='right-content'>
                 <div class='top-content'>
