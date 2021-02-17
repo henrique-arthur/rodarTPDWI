@@ -5,9 +5,7 @@ function alugar(){
     var today = new Date().toISOString().split('T')[0];
     document.getElementById("dataAluguel").setAttribute('min', today);
 
-    var dataaluguel = document.getElementById("dataAluguel").value;
-    console.log('dataaluguel');
-    document.getElementById("dataDevolucao").setAttribute('min', dataaluguel);
+    
 }
 
 function voltarAluguel(){
@@ -16,3 +14,13 @@ function voltarAluguel(){
 }
 
 var today = new Date().toISOString().split('T')[0];
+
+function definirData(){
+    var dataaluguel = document.getElementById("dataAluguel").value;
+    console.log(dataaluguel);
+    document.getElementById("dataDevolucao").setAttribute('min', dataaluguel);
+}
+
+function habilitarInput(){
+    document.getElementById("dataDevolucao").removeAttribute('disabled');
+}

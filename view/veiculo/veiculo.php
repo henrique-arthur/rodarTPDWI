@@ -31,9 +31,9 @@
   </div>
   <form class="formulario" action="" method="post">
     <div class="titulo">Data de Aluguel</div>
-    <input id="dataAluguel" min="" class="entrada entrarCampos" type="date" name="dataAluguel" placeholder="Data de aluguel" required>
+    <input id="dataAluguel" min="" class="entrada entrarCampos" onclick="habilitarInput()" type="date" name="dataAluguel" placeholder="Data de aluguel" required>
     <div class="titulo">Data de Devolução</div>
-    <input id="dataDevolucao" min="" class="entrada entrarCampos" type="date" name="dataDevolucao" placeholder="Data de devolução" required>
+    <input onclick="definirData()" id="dataDevolucao" min="" class="entrada entrarCampos" type="date" name="dataDevolucao" placeholder="Data de devolução" disabled required>
     <input class="entrada entrarBotao" type="submit" name="enviar" value="Alugar">  
   </form>
 </div>
