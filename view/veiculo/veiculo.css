@@ -35,6 +35,9 @@ a {
 
     display: flex;
     flex-direction: row;
+
+    min-height: 449px;
+    margin-bottom: 40px;
 }
 
 .left-content {
@@ -72,7 +75,7 @@ a {
 }
 
 .elemento .right-content {
-    margin:  40px auto 20px auto;
+    margin:  40px auto 40px auto;
     color: #474554;
 
     display: flex;
@@ -128,7 +131,7 @@ a {
 
 .elemento .right-content .bottom-content {
     font-weight: bold;
-    font-size: 72px;
+    font-size: 48px;
     text-align: center;
 }
 
@@ -138,3 +141,29 @@ a {
 
 
 /* FIM DO PRIMEIRO CARD */
+
+.descricao {
+    padding: 20px 40px 40px 40px;
+    margin-bottom: 70px;
+    flex-direction: column;
+    min-height: 100px;
+}
+
+.descricaoTexto {
+    font-weight: 600;
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+.listaDesc {
+    font-weight: 500;
+    font-size: 20px;
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+    grid-row-gap: 30px;
+    grid-column-gap: 75px;
+    justify-content: center;
+    text-align: center;
+}

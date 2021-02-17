@@ -3,8 +3,6 @@
     require_once '../../services/dbcon.php';
     require_once '../../model/veiculoModel.php';
 
-    $veiculo = new veiculo();
-
     function formatarValor($valor){
         $numero = number_format($valor, 2, ',', '.');
         $numero = 'R$ ' . $numero . '/Dia';
@@ -62,7 +60,7 @@
                         </div>
                     </div>
                     <div class='bottom-content'>
-                        <p>".formatarValor($linha['valor']) ."</p>
+                        <p>". formatarValor($linha['valor']) ."</p>
                     </div>
                 </div>
                 </div>
