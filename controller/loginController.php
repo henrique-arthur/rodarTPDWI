@@ -36,7 +36,7 @@ function login($email, $senha){
         unset($_SESSION['nome']);
         unset($_SESSION['senha']);
 
-        header('Location: ../view/login/login.php?e=block');
+        header('Location: ../view/login/login.php?e=msg-aparecer');
         return false;
     }}
     catch(PDOException $e){

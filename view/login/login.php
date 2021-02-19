@@ -16,7 +16,7 @@
             $e = $_GET["e"];
         } else {
         
-            $e = "none";
+            $e = "";
         }    
     ?>
     <div class="container">
@@ -57,11 +57,17 @@
                     <input class="entrada entrarCampos" type="text" name="email" placeholder="Email" required>
                     <input class="entrada entrarCampos" type="password" name="senha" placeholder="Senha" required>
                     <input class="entrada entrarCampos" type="password" name="senhaRepetir" placeholder="Senha" required>
-                    <p class="erro" id="erro" style="display:<?php echo $e ?>;">Os dados estão incorretos.</p>
+                    <!-- <p class="erro" id="erro" style="display:;">Os dados estão incorretos.</p> -->
                     <input class="entrada entrarBotao" type="submit" name="enviar" value="Criar Conta">
                 </form>
             </div>
         </div>
+    </div>
+    <div id="msg" class="mensagem-container <?php echo $e ?>">
+    <p class="mensagem">Erro, email ou senha incorretos.</p>
+        <span onclick="sair()" id="fechar" class=" material-icons">
+            close
+        </span>
     </div>
 </body>
 </html>
