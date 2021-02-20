@@ -27,6 +27,7 @@ function login($email, $senha){
         $_SESSION['nome'] = $query[0]['nome'];
         $_SESSION['senha'] = $query[0]['senha'];
 
+
         header('Location: ../view/menu/menu.php');
 
         return true;
@@ -35,8 +36,9 @@ function login($email, $senha){
         unset($_SESSION['email']);
         unset($_SESSION['nome']);
         unset($_SESSION['senha']);
-
+        
         header('Location: ../view/login/login.php?e=msg-aparecer');
+
         return false;
     }}
     catch(PDOException $e){

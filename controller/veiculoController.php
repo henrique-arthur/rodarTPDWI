@@ -3,11 +3,15 @@
     require_once '../../services/dbcon.php';
     require_once '../../model/veiculoModel.php';
 
-    // session_start();
-    // echo $_SESSION['id'];
-function carregarVeiculo(){
+    function carregarVeiculo(){
+    session_start();
+    if(array_key_exists("idVeiculo", $_SESSION)){
+        unset($_SESSION['idVeiculo']);
+    }
+        
     $id = $_GET['id'];
-
+    $_SESSION['idVeiculo'] = $_GET['id'];
+    
     try{
         $conexao = new conexao();
         $con = new PDO($conexao->dsn, $conexao->user, $conexao->pass);
@@ -18,7 +22,6 @@ function carregarVeiculo(){
             $query = $sql->fetchAll(PDO::FETCH_ASSOC);
 
             $descricaoArr = explode( ',', $query[0]['descricao'], 100);
-
             
             echo 
             "
@@ -66,6 +69,7 @@ function carregarVeiculo(){
                 </div>
                 <div class='bottom-content'>
                     <p>".formatarValor($query[0]['valor']) ."</p>
+                    <p style='display: none;' id='diaria'>". $query[0]['valor'] . "</p>
                 </div>
             </div>
             </div>

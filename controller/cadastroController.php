@@ -33,7 +33,7 @@ if(empty($user->getNome()) || empty($user->getEmail()) || empty($user->getSenha(
             }
         } catch (PDOException $erro) {
             echo $erro->getMessage();
-            header('Location: ../view/login/login.php?e=block');
+            header('Location: ../view/login/login.php?e=msg-aparecer');
             return false;
         }
     }
