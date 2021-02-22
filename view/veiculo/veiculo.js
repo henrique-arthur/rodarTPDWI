@@ -22,7 +22,7 @@ function alugar(){
 
         var valorTotal = diaria * diasAlugado;
 
-        document.getElementById('pagarTexto').innerHTML = 'Você pagará <span id="pagarValor" style="color: green;"></span>';
+        document.getElementById('pagarTexto').innerHTML = 'Você pagará <span id="pagarValor" style="color: green; font-weight: 500;"></span>';
         document.getElementById('pagarValor').innerHTML = valorTotal.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
       
     });

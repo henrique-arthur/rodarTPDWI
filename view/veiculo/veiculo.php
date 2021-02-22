@@ -30,7 +30,7 @@
         </a>
     </div>
 
-    <div id="cform" class="confirm-container">
+  <div id="cform" class="confirm-container">
     <div class="div-voltar">
       <a class="sair" onclick="voltarAluguel()">
         <span class="material-icons voltarIcon">
@@ -46,7 +46,7 @@
       <p style="color: #000;" id="pagarTexto"></p>
       <input class="entrada entrarBotao" type="submit" name="enviar" value="Alugar">  
     </form>
-    </div>
+  </div>
 
     <div id="sform" class="container">
       <?php carregarVeiculo();?>

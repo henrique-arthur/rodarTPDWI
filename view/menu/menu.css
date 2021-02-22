@@ -128,10 +128,6 @@ a:hover{
     padding: 4px 0px 4px 0px;
 }
 
-.left-content .alugarTexto:hover {
-    
-    background-color: #007400;
-}
 
 .left-content .alugarTexto {
     font-weight: bold;
@@ -142,8 +138,13 @@ a:hover{
     padding: 23px 33px 23px 33px;
     border-radius: 0px 0px 0px 8px;
     padding: 23px 33px 23px 33px;
-
+    
     transition: ease-in-out, .2s ease-in-out;
+}
+
+.left-content .alugarTexto:hover {
+    
+    background-color: #007400;
 }
 
 .left-content .top-left-content {

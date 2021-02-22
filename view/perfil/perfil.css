@@ -1,0 +1,217 @@
+body {
+  color: #474554;
+}
+.container {
+  margin: 0px 200px 0px 200px;
+}
+.nav {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 0px 70px 0px;
+}
+
+.nav .titulo {
+  font: 400 50px Sansation, sans-serif;
+}
+
+a {
+  color: #474554;
+  transition: ease-in-out, .2s ease-in-out;
+}
+
+.voltarIcon {
+  font-size: 28px;
+}
+
+.titulo-veiculos {
+  font-size: 36px;
+  font-weight: 500;
+  padding-left: 50px;
+}
+
+.lista {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(560px, 650px));
+  grid-row-gap: 40px;
+  grid-column-gap: 75px;
+  justify-content: center;
+  text-align: center;
+  padding: 70px 0px 70px 0px;
+}
+
+.elemento {
+  background: #FFFFFF;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  min-height: 250px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.bottom, .top {
+  display: flex;
+  flex-direction: row;
+}
+
+.top {
+  height: 100%;
+}
+
+.bottom {
+  height: 88px;
+}
+
+
+.left-content {
+  width: 50%;
+}
+
+.left-content .img-box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.left-content .imgCarro {
+  max-width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.right-content {
+  margin: auto;
+  padding: 50px 0px;
+}
+
+.right-content .nomeVeiculo {
+  font-weight: 600;
+  font-size: 24px;
+  padding-bottom: 30px;
+  min-width: 250px;
+  text-align: left;
+}
+
+.botoesCard {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+  padding: 23px 33px 23px 33px;
+  padding: 23px 33px 23px 33px;
+  
+  transition: ease-in-out, .2s ease-in-out;
+}
+
+.alugarTexto {
+  border-radius: 0px 0px 0px 8px;
+  background-color: #42BE42;
+}
+
+.alugarTexto:hover {
+  
+  background-color: #007400;
+}
+
+.estenderTexto {
+  border-radius: 0px 0px 8px 0px;
+  background-color: #FFCC00;
+}
+
+.estenderTexto:hover {
+  
+  background-color: #cfa602;
+}
+
+.left-button, .right-button {
+  width: 50%;
+}
+
+.dados {
+  text-align: left;
+}
+
+.datas {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.info-titulo {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* FORM DE CONFIRMAR DEVOLUÇÃO */
+
+.confirm-container {
+  display: block;
+  background: #FFFFFF;
+  box-shadow: 6px 6px 20px rgb(0 0 0 / 25%);
+  border-radius: 8px;
+  padding: 40px 60px 80px 60px;
+  z-index: 9;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.confirm-container form {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.div-voltar {
+  width: 100%;
+  text-align: right;
+  padding-bottom: 40px;
+}
+
+.titulo {
+  font-weight: 700;
+  padding-bottom: 8px;
+}
+
+.entrarCampos {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 16px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 6px 6px 10px rgb(0 0 0 / 25%);
+}
+
+.entrada {
+  width: 314px;
+  height: 50px;
+  border-width: 0px;
+  font: 400 14px Roboto, sans-serif;
+}
+
+.entrarBotao {
+  margin-top: 32px;
+  background-color: #42BE42;
+  color: #fff;
+
+  font-size: 16px;
+
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.sair {
+  cursor: pointer;
+}
+
+/* FIM DO FORM DE CONFIRMAR DEVOLUÇÃO  */

@@ -38,7 +38,7 @@
       <input class="" name="buscar" placeholder="Buscar veículos">
     </div>
     <div class="nav-direita">
-      <a class="perfil" href="#">
+      <a class="perfil" href="../perfil/perfil.php">
         <span class="material-icons">
           account_circle
         </span>
