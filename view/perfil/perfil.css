@@ -153,7 +153,7 @@ a {
 /* FORM DE CONFIRMAR DEVOLUÇÃO */
 
 .confirm-container {
-  display: block;
+  display: none;
   background: #FFFFFF;
   box-shadow: 6px 6px 20px rgb(0 0 0 / 25%);
   border-radius: 8px;
