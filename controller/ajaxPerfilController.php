@@ -36,10 +36,12 @@ if($tipo == 'DEVOLVER'){
       </span>
     </a>
   </div>
-  <div class='titulo'>Nova data de devolução</div>
-      <input id='dataDevolucao' min='".$dataMin."' class='entrada entrarCampos' type='date' name='dataDevolucao' placeholder='Nova data de devolução' required>
+  <form class='formulario' action='' method='post'>
+    <div class='titulo-data'>Nova data de devolução</div>
+    <input id='dataDevolucao' min='".$dataMin."' class='entrada entrarCampos' type='date' name='dataDevolucao' placeholder='Nova data de devolução' required>
+    <input class='entrada entrarBotao' type='submit' name='enviar' value='Prorrogar' style='background-color: #FFCC00;'> 
+  </form>
   ";
-
 }
 
 ?>

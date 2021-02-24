@@ -1,7 +1,6 @@
 $(document).ready(function() {
   $('#formjax').submit(function(event) { //Trigger on form submit
-      $('#name + .throw_error').empty(); //Clear the messages first
-      $('#success').empty();
+    $("#cform").empty();
 
       var ajaxRequest;
       //Validate fields if required using jQuery
@@ -33,22 +32,17 @@ $(document).ready(function() {
       /* On failure of request this function will be called  */
       ajaxRequest.fail(function (response){
         if(response.status == 200){
-          $("#cform").empty();
           $( "#cform" ).append(response.responseText);
         }else{
           console.log(response);
         }
-          // Show error
-          $("#result").html('There is error while submit');
       });
 
       event.preventDefault(); //Prevent the default submit
   });
 
   $('#formjax2').submit(function(event) { //Trigger on form submit
-    $('#name + .throw_error').empty(); //Clear the messages first
-    $('#success').empty();
-
+    $("#cform").empty();
     var ajaxRequest;
     //Validate fields if required using jQuery
 
@@ -80,14 +74,11 @@ $(document).ready(function() {
     /* On failure of request this function will be called  */
     ajaxRequest.fail(function (response){
       if(response.status == 200){
-        $("#cform").empty();
         $( "#cform" ).append(response.responseText);
         console.log(response)
       }else{
         console.log(response);
       }
-        // Show error
-        $("#result").html('There is error while submit');
     });
 
     event.preventDefault(); //Prevent the default submit

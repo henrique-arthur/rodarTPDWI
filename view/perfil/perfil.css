@@ -185,6 +185,14 @@ a {
   padding-bottom: 60px;
 }
 
+.titulo-data {
+  font-weight: 700;
+  padding-bottom: 8px;
+  text-align: left;
+  align-self: start;
+  padding-left: 10px;
+}
+
 .titulo-form {
   font-weight: 700;
   font-size: 18px;
@@ -225,6 +233,11 @@ a {
 
   cursor: pointer;
   font-weight: 700;
+  transition: ease-in-out, .2s ease-in-out;
+}
+
+.entrarBotao:hover {
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.25);
 }
 
 .sair {
