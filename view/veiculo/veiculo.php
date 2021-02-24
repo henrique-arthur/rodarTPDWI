@@ -48,7 +48,7 @@
     </form>
   </div>
 
-    <div id="sform" class="container">
+    <div id="sform">
       <?php carregarVeiculo();?>
       <!-- <div class="elemento">
         <div class="left-content">

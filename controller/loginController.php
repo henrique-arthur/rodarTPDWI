@@ -42,6 +42,7 @@ function login($email, $senha){
         return false;
     }}
     catch(PDOException $e){
+        header('Location: ../view/login/login.php?e=msg-aparecer');
         //$e->getMessage();
         return array();
     }

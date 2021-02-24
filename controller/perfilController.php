@@ -12,7 +12,7 @@
         $valor = $dateInterval->days * $valor;
 
         $numero = number_format($valor, 2, ',', '.');
-        $numero = 'R$ ' . $numero . '/Dia';
+        $numero = 'R$ ' . $numero ;
 		return $numero;
     }
 
@@ -37,6 +37,7 @@
                     echo 
                     "
                     <div class='elemento'>
+                        <input type='hidden' id='idVeiculo' name='idVeiculo' value='".$linha['idVeiculo']."'>
                         <div class='top'>
                         <div class='left-content'>
                             <div class='img-box'>
@@ -65,7 +66,7 @@
                         </div>
                         <div class='bottom'>
                         <div class='left-button'>
-                            <a href='../perfil/perfil.php?id=". $linha['idVeiculo'] ."' onclick='abrirForm()'>
+                            <a 'onclick='abrirForm()'>
                             <div class='botoesCard alugarTexto'>DEVOLVER</div>
                             </a>
                         </div>
@@ -79,7 +80,7 @@
                     ";
                }
             }else{
-                return false;
+                echo "<p>você não possui nenhum veículo alugado no momento.</p>";
             }
         }
         catch(PDOException $e){
