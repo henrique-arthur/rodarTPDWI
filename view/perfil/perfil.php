@@ -62,9 +62,9 @@
               <input class="botoesCard alugarTexto" type="submit" name="tipo" value="DEVOLVER" onclick="abrirForm()"></input>
             </form>
             <form class="right-button" id="formjax2" name="postForm">
-              <input type="hidden" name='idVeiculo2' value='1'>
-              <input type="hidden" name='nomeVeiculo2' value='DODGE RAM 1500 LTS'>
-              <input type="hidden" name='imgVeiculo2' value='../../assets/veiculos/dodge_ram_rebel_2021.png'>
+              <input type="hidden" name='idVeiculo' value='1'>
+              <input type="hidden" name='nomeVeiculo' value='DODGE RAM 1500 LTS'>
+              <input type="hidden" name='imgVeiculo' value='../../assets/veiculos/dodge_ram_rebel_2021.png'>
               <input type="hidden" name='dataMin' value='2021-02-10'>
               <input class="botoesCard estenderTexto" type="submit" name="tipo2" value="PRORROGAR" onclick="abrirForm()"></input>
             </form>

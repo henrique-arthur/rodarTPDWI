@@ -8,9 +8,9 @@ $(document).ready(function() {
 
       var postForm = { //Fetch form data
           'idVeiculo'     : $('input[name=idVeiculo]').val(), //Store name fields value
-          'tipo'     : $('input[name=tipo]').val(), //Store name fields value
-          'nomeVeiculo'     : $('input[name=nomeVeiculo]').val(), //Store name fields value
-          'imgVeiculo'     : $('input[name=imgVeiculo]').val() //Store name fields value
+          'tipo'          :$('input[name=tipo]').val(), //Store name fields value
+          'nomeVeiculo'   : $('input[name=nomeVeiculo]').val(), //Store name fields value
+          'imgVeiculo'    : $('input[name=imgVeiculo]').val() //Store name fields value
       };
 
       ajaxRequest = $.ajax({ //Process the form using $.ajax()
@@ -53,10 +53,10 @@ $(document).ready(function() {
     //Validate fields if required using jQuery
 
     var postForm = { //Fetch form data
-        'idVeiculo'     : $('input[name=idVeiculo2]').val(), //Store name fields value
+        'idVeiculo'     : $('input[name=idVeiculo]').val(), //Store name fields value
         'tipo'     : $('input[name=tipo2]').val(), //Store name fields value
-        'nomeVeiculo'     : $('input[name=nomeVeiculo2]').val(), //Store name fields value
-        'imgVeiculo'     : $('input[name=imgVeiculo2]').val(), //Store name fields value
+        'nomeVeiculo'     : $('input[name=nomeVeiculo]').val(), //Store name fields value
+        'imgVeiculo'     : $('input[name=imgVeiculo]').val(), //Store name fields value
         'dataMin'     : $('input[name=dataMin]').val() //Store name fields value
     };
 
@@ -82,6 +82,7 @@ $(document).ready(function() {
       if(response.status == 200){
         $("#cform").empty();
         $( "#cform" ).append(response.responseText);
+        console.log(response)
       }else{
         console.log(response);
       }

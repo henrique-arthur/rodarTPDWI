@@ -2,7 +2,8 @@
 $id = filter_input(INPUT_POST, 'idVeiculo', FILTER_SANITIZE_STRING);
 $nome = filter_input(INPUT_POST, 'nomeVeiculo', FILTER_SANITIZE_STRING); 
 $img = filter_input(INPUT_POST, 'imgVeiculo', FILTER_SANITIZE_STRING);
-$tipo = filter_input(INPUT_POST, 'imgVetipoiculo', FILTER_SANITIZE_STRING); 
+$tipo = filter_input(INPUT_POST, 'tipo', FILTER_SANITIZE_STRING); 
+
 
 if($tipo == 'DEVOLVER'){
   echo 
