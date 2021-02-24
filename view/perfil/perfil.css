@@ -107,6 +107,9 @@ a {
   color: #FFFFFF;
   padding: 23px 33px 23px 33px;
   padding: 23px 33px 23px 33px;
+
+  border-width: 0px;
+  width: 100%;
   
   transition: ease-in-out, .2s ease-in-out;
 }
@@ -169,18 +172,32 @@ a {
 .confirm-container form {
   display: flex;
   flex-direction: column;
+
+  text-align: center;
+  align-items: center;
   
 }
 
-.div-voltar {
-  width: 100%;
-  text-align: right;
-  padding-bottom: 40px;
+.titulo-voltar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 60px;
 }
 
-.titulo {
+.titulo-form {
   font-weight: 700;
-  padding-bottom: 8px;
+  font-size: 18px;
+  width: 300px;
+}
+
+.imgForm {
+  width: 200px;
+}
+
+.nomeVeiculo-form {
+  font-weight: 600;
+  font-size: 14px;
 }
 
 .entrarCampos {
@@ -200,7 +217,7 @@ a {
 }
 
 .entrarBotao {
-  margin-top: 32px;
+  margin-top: 60px;
   background-color: #42BE42;
   color: #fff;
 

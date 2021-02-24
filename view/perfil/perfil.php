@@ -7,7 +7,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="../../global.css" rel="stylesheet">
     <link href="perfil.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="perfil.js"></script>
+    <script type="text/javascript" src="ajax.js"></script>
     <?php require_once '../../controller/perfilController.php'?>
     <title>Rodar | Aluguel de Veículos</title>
 </head>
@@ -25,9 +27,7 @@
     <div id="sform" class="container-lista">
       <div class="titulo-veiculos">Meus veículos</div>
       <div class="lista">
-      <?php listarVeiculos(); ?>
-
-        <!-- <div class="elemento">
+        <div class="elemento">
           <div class="top">
             <div class="left-content">
               <div class="img-box">
@@ -55,33 +55,25 @@
             </div>
           </div>
           <div class="bottom">
-            <div class="left-button">
-              <a onclick="abrirForm()">
-                <div class="botoesCard alugarTexto">DEVOLVER</div>
-              </a>
-            </div>
-            <div class="right-button">
-              <a>
-                <div class="botoesCard estenderTexto">PRORROGAR</div>
-              </a>
-            </div>
+            <form class="left-button" id="formjax" name="postForm">
+              <input type="hidden" name='idVeiculo' value='1'>
+              <input type="hidden" name='nomeVeiculo' value='DODGE RAM 1500 LTS'>
+              <input type="hidden" name='imgVeiculo' value='../../assets/veiculos/dodge_ram_rebel_2021.png'>
+              <input class="botoesCard alugarTexto" type="submit" name="tipo" value="DEVOLVER" onclick="abrirForm()"></input>
+            </form>
+            <form class="right-button" id="formjax2" name="postForm">
+              <input type="hidden" name='idVeiculo2' value='1'>
+              <input type="hidden" name='nomeVeiculo2' value='DODGE RAM 1500 LTS'>
+              <input type="hidden" name='imgVeiculo2' value='../../assets/veiculos/dodge_ram_rebel_2021.png'>
+              <input type="hidden" name='dataMin' value='2021-02-10'>
+              <input class="botoesCard estenderTexto" type="submit" name="tipo2" value="PRORROGAR" onclick="abrirForm()"></input>
+            </form>
           </div>
-        </div> -->
+        </div>
+      <?php listarVeiculos(); ?>
 
     </div>
   </div>
     <div id="cform" class="confirm-container">
-    <div class="div-voltar">
-      <a class="sair" onclick="voltar()">
-        <span class="material-icons voltarIcon">
-          arrow_back
-        </span>
-      </a>
     </div>
-    <form class="formulario" action="" method="post">
-      <div class="titulo-form">Você tem certeza que deseja devolver este veículo?</div>
-    
-      <input class="entrada entrarBotao" type="submit" name="enviar" value="Devolver">  
-    </form>
-  </div>
 </body>

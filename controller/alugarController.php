@@ -27,12 +27,13 @@ try{
     if ($pre->execute()) {
         header("Location: ../view/veiculo/veiculo.php?id=$idVeiculo&e=msg-aparecer&status=sucess");
     } else {
-        // header("Location: ../view/veiculo/veiculo.php?id=$idVeiculo&e=msg-aparecer&status=error");
+        header("Location: ../view/veiculo/veiculo.php?id=$idVeiculo&e=msg-aparecer&status=error");
         print_r($pre->errorInfo());
     }
 
 }
 catch(PDOException $e){
-//$e->getMessage();
-return array();
+    header("Location: ../view/veiculo/veiculo.php?id=$idVeiculo&e=msg-aparecer&status=error");
+    //$e->getMessage();
+    return array();
 }
