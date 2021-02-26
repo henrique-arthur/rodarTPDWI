@@ -33,7 +33,7 @@
             if($sql->rowCount() > 0){
                 $query = $sql->fetchAll(PDO::FETCH_ASSOC);
     
-                foreach($query as $linha) {
+                foreach($query as $key => $linha) {
                     echo 
                     "
                     <div class='elemento'>
@@ -65,22 +65,29 @@
                         </div>
                         </div>
                         <div class='bottom'>
-                        <div class='left-button'>
-                            <a 'onclick='abrirForm()'>
-                            <div class='botoesCard alugarTexto'>DEVOLVER</div>
-                            </a>
-                        </div>
-                        <div class='right-button'>
-                            <a>
-                            <div class='botoesCard estenderTexto'>PRORROGAR</div>
-                            </a>
-                        </div>
+                            <form class='left-button' id='formjax' name='postForm' action='../../view/perfil/card.php' method='GET'>
+                            <input type='hidden' name='idVeiculo' value='".$linha['idVeiculo']."'>
+                            <input type='hidden' name='nomeVeiculo' value='". strtoupper($linha['marca']. ' ' . $linha['nome']) ."'>
+                            <input type='hidden' name='imgVeiculo' value='". $linha['img'] ."'>
+                            <input class='botoesCard alugarTexto' type='submit' name='tipo' value='DEVOLVER' onclick='abrirForm());'></input>
+                            </form>
+                            <form class='right-button' id='formjax2' name='postForm' action='../../view/perfil/card.php' method='GET'>
+                            <input type='hidden' name='idVeiculo' value='".$linha['idVeiculo']."'>
+                            <input type='hidden' name='nomeVeiculo' value='". strtoupper($linha['marca']. ' ' . $linha['nome']) ."'>
+                            <input type='hidden' name='imgVeiculo' value='". $linha['img'] ."'>
+                            <input type='hidden' name='dataMin' value='". $linha['dataDevolucao'] ."'>
+                            <input class='botoesCard estenderTexto' type='submit' name='tipo' value='PRORROGAR' onclick='abrirForm()'></input>
+                            </form>
+                        
                         </div>
                     </div>
                     ";
                }
             }else{
-                echo "<p>você não possui nenhum veículo alugado no momento.</p>";
+                echo "<p style='font-weight: 500; font-size: 18px; '>Você não possui nenhum veículo alugado no momento. <br> <span class='material-icons voltarIcon'>
+                car_rental
+            </span></p>
+                    ";
             }
         }
         catch(PDOException $e){

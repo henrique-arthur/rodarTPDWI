@@ -7,13 +7,23 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="../../global.css" rel="stylesheet">
     <link href="perfil.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="perfil.js"></script>
-    <script type="text/javascript" src="ajax.js"></script>
     <?php require_once '../../controller/perfilController.php'?>
     <title>Rodar | Aluguel de Veículos</title>
 </head>
 <body>
+<?php
+        if (array_key_exists("e", $_GET)) {
+            $e = $_GET["e"];
+            $d = $_GET["d"];
+            $m = $_GET["m"];
+
+            ($d=='s')? $s='background-color:green;' : $s='background-color:red;'; 
+        } else {
+        
+            $e = "";
+        }    
+    ?>
   <div class="container">
     <div class="nav">
       <div class="titulo">RODAR</div>
@@ -27,53 +37,14 @@
     <div id="sform" class="container-lista">
       <div class="titulo-veiculos">Meus veículos</div>
       <div class="lista">
-        <div class="elemento">
-          <div class="top">
-            <div class="left-content">
-              <div class="img-box">
-                <img class="imgCarro" src="../../assets/veiculos/dodge_ram_rebel_2021.png" alt="" srcset="">
-              </div>
-            </div>
-            <div class="right-content">
-              <div class="nomeVeiculo">DODGE RAM ENOIS</div>
-              <div class="dados">
-                <div class="datas">
-                  <div class="aluguel">
-                    <p class="info-titulo">Data do aluguel</p>
-                    <p>10/02/2021</p>
-                  </div>
-                  <div class="devolucao">
-                    <p class="info-titulo">Data da devolução</p>
-                    <p>10/02/2021</p>
-                  </div>
-                </div>
-                <div class="valor">
-                  <p class="info-titulo">Valor</p>
-                    <p>R$ 1.500,00</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="bottom">
-            <form class="left-button" id="formjax" name="postForm">
-              <input type="hidden" name='idVeiculo' value='1'>
-              <input type="hidden" name='nomeVeiculo' value='DODGE RAM 1500 LTS'>
-              <input type="hidden" name='imgVeiculo' value='../../assets/veiculos/dodge_ram_rebel_2021.png'>
-              <input class="botoesCard alugarTexto" type="submit" name="tipo" value="DEVOLVER" onclick="abrirForm()"></input>
-            </form>
-            <form class="right-button" id="formjax2" name="postForm">
-              <input type="hidden" name='idVeiculo' value='1'>
-              <input type="hidden" name='nomeVeiculo' value='DODGE RAM 1500 LTS'>
-              <input type="hidden" name='imgVeiculo' value='../../assets/veiculos/dodge_ram_rebel_2021.png'>
-              <input type="hidden" name='dataMin' value='2021-02-10'>
-              <input class="botoesCard estenderTexto" type="submit" name="tipo2" value="PRORROGAR" onclick="abrirForm()"></input>
-            </form>
-          </div>
-        </div>
-      <?php listarVeiculos(); ?>
-
+        <?php listarVeiculos(); ?>
+      </div>
     </div>
   </div>
-    <div id="cform" class="confirm-container">
+    <div id="msg" class="mensagem-container <?php echo $e ?>" style="<?php echo $s ?>">
+    <p class="mensagem"><?php echo $m ?></p>
+        <span onclick="sair()" id="fechar" class=" material-icons">
+            close
+        </span>
     </div>
 </body>

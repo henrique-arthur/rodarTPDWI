@@ -17,7 +17,7 @@ body {
 } 
 
 .nav .buscar {
-    display: flex;
+    display: none;
     flex-direction: row;
     align-items: center;
 
@@ -52,7 +52,7 @@ body {
 }
 
 .nav .nav-direita .perfil {
-    padding-right: 50px;
+    margin-right: 50px;
     display: flex;
     align-items: center;
 }
@@ -62,7 +62,7 @@ body {
 }
 
 .nav-direita span:first-child {
-    padding-right: 8px;
+    margin-right: 8px;
 }
 
 .nav-direita p {
@@ -70,12 +70,13 @@ body {
 }
 
 a {
-    color: #8C8C8C;
+    color: #474554;
     transition: ease-in-out, .2s ease-in-out;
+    border-radius: 5px;
 }
 
 a:hover{
-    color: #474554;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.25);
 
 }
 
