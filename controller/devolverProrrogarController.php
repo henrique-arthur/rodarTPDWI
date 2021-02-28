@@ -40,7 +40,7 @@ if(isset($idVeiculo) and isset($tipo)){
         $sql->bindValue(":dataDevolucao", $dataDevolucao);
         $sql->execute();
 
-        header('Location: ../view/perfil/perfil.php?e=msg-aparecer&d=s&m=Sucesso!%O%20prazo%20de%20devolução%20do%20veículo%20foi%20prorrogado.');
+        header('Location: ../view/perfil/perfil.php?e=msg-aparecer&d=s&m=Sucesso!%20O%20prazo%20de%20devolução%20do%20veículo%20foi%20prorrogado.');
 
         return true;
     }

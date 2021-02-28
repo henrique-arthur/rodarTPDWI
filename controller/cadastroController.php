@@ -12,10 +12,10 @@ $senhaRepetir = (filter_input(INPUT_POST, 'senhaRepetir', FILTER_SANITIZE_STRING
 
 if(empty($user->getNome()) || empty($user->getEmail()) || empty($user->getSenha()) || empty($senhaRepetir)){
 
-    header('Location: ../view/login/login.php?e=block');
+    header('Location: ../view/login/login.php?e=msg-aparecer');
 }else{
     if($user->getSenha() !== $senhaRepetir ){ 
-        header('Location: ../view/login/login.php?e=block');
+        header('Location: ../view/login/login.php?e=msg-aparecer');
     }else{  
         try {
             $conexao = new conexao();
@@ -32,7 +32,6 @@ if(empty($user->getNome()) || empty($user->getEmail()) || empty($user->getSenha(
                 print_r($pre->errorInfo());
             }
         } catch (PDOException $erro) {
-            echo $erro->getMessage();
             header('Location: ../view/login/login.php?e=msg-aparecer');
             return false;
         }

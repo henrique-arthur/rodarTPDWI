@@ -25,7 +25,7 @@
                 <p class="titulo">RODAR</p>
                 <p class="subtitulo">Aluguel de Veículos</p>
             </div>
-            <img src="../../assets/carrologin.png" alt="" sizes="" srcset="">
+            <img src="../../assets/carrologin.webp" alt="" sizes="" srcset="">
         </div>
         <div class="container-box">
             <div class="box" id="formLogin">
@@ -33,8 +33,10 @@
                 <form class="formulario" action="../../controller/loginController.php" method="post">
                     <input class="entrada entrarCampos" type="text" name="email" placeholder="Email" required>
                     <input class="entrada entrarCampos" type="password" name="senha" placeholder="Senha" required>
-                    <p class="erro" style="display:<?php echo $e ?>;">Os dados estão incorretos.</p>
-                    <input class="entrada entrarBotao" type="submit" name="enviar" value="Entrar">  
+                    <input onclick="loading()" id="btn" class="entrada entrarBotao" type="submit" name="enviar" value="Entrar">  
+                    <div id="loading-container" class="loading-container">
+                        <div id="loading" class="loading"></div>
+                    </div>
                     <div class="checkbox">
                         <input type="checkbox" id="lembrarLogin" name="lembrarLogin">
                         <label for="lembrarLogin">Lembre-se de mim</label>
@@ -57,8 +59,10 @@
                     <input class="entrada entrarCampos" type="text" name="email" placeholder="Email" required>
                     <input class="entrada entrarCampos" type="password" name="senha" placeholder="Senha" required>
                     <input class="entrada entrarCampos" type="password" name="senhaRepetir" placeholder="Senha" required>
-                    <!-- <p class="erro" id="erro" style="display:;">Os dados estão incorretos.</p> -->
-                    <input class="entrada entrarBotao" type="submit" name="enviar" value="Criar Conta">
+                    <input id="btn-cad" class="entrada entrarBotao" type="submit" name="enviar" value="Criar Conta"  onclick="loadingCad()">
+                    <div id="cad" class="loading-container">
+                        <div id="loading" class="loading"></div>
+                    </div>
                 </form>
             </div>
         </div>

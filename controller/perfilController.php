@@ -9,12 +9,14 @@
         $data_fim = new DateTime($dataDevolucao);
 
         $dateInterval = $data_inicio->diff($data_fim);
-        $valor = $dateInterval->days * $valor;
-
-        $numero = number_format($valor, 2, ',', '.');
+        $valorTotal = $dateInterval->days * $valor;
+        $valorTotal = $valorTotal + $valor;
+        
+        $numero = number_format($valorTotal, 2, ',', '.');
         $numero = 'R$ ' . $numero ;
 		return $numero;
     }
+
 
     function formatardata($data){
         return date("d/m/Y", strtotime($data));

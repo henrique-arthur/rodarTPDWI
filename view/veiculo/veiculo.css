@@ -35,7 +35,7 @@ a {
     border-radius: 8px;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
 
     min-height: 449px;
     margin-bottom: 40px;
@@ -89,12 +89,12 @@ a {
     color: #FFFFFF;
     background-color: #42BE42;
     padding: 23px 33px 23px 33px;
-    border-radius: 0px 0px 0px 8px;
+    border-radius: 0px 0px 8px 0px;
     padding: 23px 33px 23px 33px;
 }
 
 .elemento .right-content {
-    margin:  40px auto 40px auto;
+    margin: 40px auto 40px 60px;
     color: #474554;
 
     display: flex;

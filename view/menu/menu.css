@@ -99,7 +99,7 @@ a:hover{
     border-radius: 8px;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     min-height: 250px;
 }
 
@@ -137,7 +137,7 @@ a:hover{
     color: #FFFFFF;
     background-color: #42BE42;
     padding: 23px 33px 23px 33px;
-    border-radius: 0px 0px 0px 8px;
+    border-radius: 0px 0px 8px 0px;
     padding: 23px 33px 23px 33px;
     
     transition: ease-in-out, .2s ease-in-out;
@@ -155,7 +155,7 @@ a:hover{
 }
 
 .elemento .right-content {
-    margin: auto;
+    margin: auto auto auto 30px;
     color: #474554;
 }
 
@@ -195,9 +195,11 @@ a:hover{
 .elemento .right-content .bottom-content {
     font-weight: bold;
     font-size: 36px;
+    text-align: left;
     /* padding-bottom: 20px; */
 }
 
 .elemento .right-content .tipoCambio, .elemento .right-content .cor {
     padding-bottom: 20px;
 }
+

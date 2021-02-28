@@ -35,7 +35,7 @@ a {
 .lista {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(560px, 650px));
+  grid-template-columns: repeat(auto-fit, minmax(638px, 650px));
   grid-row-gap: 40px;
   grid-column-gap: 75px;
   justify-content: center;
@@ -54,16 +54,15 @@ a {
   justify-content: flex-end;
 }
 
-.bottom, .top {
-  display: flex;
-  flex-direction: row;
-}
-
 .top {
+  display: flex;
+  flex-direction: row-reverse;
   height: 100%;
 }
 
 .bottom {
+  display: flex;
+  flex-direction: row;
   height: 88px;
 }
 
@@ -251,76 +250,76 @@ a {
 /* MENSAGEM */
 
 .mensagem-container {
-  width: 100%;
-  height: 60px;
-  background-color: red;
-  text-align: center;
-  font-size: 20px;
-  color: #fff;
-  overflow:hidden;
-  position: fixed;
-  bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: red;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    overflow:hidden;
+    position: fixed;
+    bottom: 0;
 
-  display: none;
-  justify-content: center;
-  align-items: center;
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
 
 .mensagem {
-  font-size: 18px;
-  font-weight: 800;
+    font-size: 18px;
+    font-weight: 800;
 
-  margin-top: 0%;
+    margin-top: 0%;
 }
 
 #fechar {
-  position: absolute;
-  right: 0;
-  padding-right: 30px;
-  cursor: pointer;
-  font-weight: 900;
-  font-size: 28px;
+    position: absolute;
+    right: 0;
+    padding-right: 30px;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 28px;
 }
 
 .msg-aparecer {
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  animation-name: mensagem-aparecer;
-  display: flex;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: mensagem-aparecer;
+    display: flex;
 }
 
 @keyframes mensagem-aparecer {
-  from {
-    margin-top: 100%;
-    height: 0px; 
-  }
-
-  to {
-    margin-top: 0%;
-    height: 60px;
-  }
+    from {
+      margin-top: 100%;
+      height: 0px; 
+    }
+  
+    to {
+      margin-top: 0%;
+      height: 60px;
+    }
 }
 
 .msg-sair {
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  animation-name: mensagem-sumir;
-  display: flex;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: mensagem-sumir;
+    display: flex;
 }
 
 @keyframes mensagem-sumir {
-  from {
-      margin-top: 0%;
-      height: 60px;
-      display: flex;
-  }
+    from {
+        margin-top: 0%;
+        height: 60px;
+        display: flex;
+    }
+  
+    to {
+        margin-top: 100%;
+        height: 0px;
+        display: none;
 
-  to {
-      margin-top: 100%;
-      height: 0px;
-      display: none;
-
-  }
+    }
 }
 
 /* MENSAGEM FIM */

@@ -1,9 +1,9 @@
 <?php
+session_start();
 
 require_once '../services/dbcon.php';
 require_once '../model/usuarioModel.php';
 
-session_start();
 
 $usuario = new usuario();
 
@@ -26,7 +26,6 @@ function login($email, $senha){
         $_SESSION['email'] = $query[0]['email'];
         $_SESSION['nome'] = $query[0]['nome'];
         $_SESSION['senha'] = $query[0]['senha'];
-
 
         header('Location: ../view/menu/menu.php');
 
