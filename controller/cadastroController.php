@@ -12,7 +12,7 @@ $senhaRepetir = (filter_input(INPUT_POST, 'senhaRepetir', FILTER_SANITIZE_STRING
 
 if(empty($user->getNome()) || empty($user->getEmail()) || empty($user->getSenha()) || empty($senhaRepetir)){
 
-    header('Location: ../view/login/login.php?e=msg-aparecer');
+    header('Location: ../view/login/login.php?s=false&e=msg-aparecer&m=Erro,%20existem%20campos%20vazios.');
 }else{
     if($user->getSenha() !== $senhaRepetir ){ 
         header('Location: ../view/login/login.php?e=msg-aparecer');
@@ -27,12 +27,12 @@ if(empty($user->getNome()) || empty($user->getEmail()) || empty($user->getSenha(
             $pre->bindValue(3, $user->getSenha());
         
             if ($pre->execute()) {
-                header('Location: ../view/login/login.php');
+                header('Location: ../view/login/login.php?s=true&e=msg-aparecer&m=O%20cadastro%20foi%20realizado%20com%20sucesso!');
             } else {
                 print_r($pre->errorInfo());
             }
         } catch (PDOException $erro) {
-            header('Location: ../view/login/login.php?e=msg-aparecer');
+            header('Location: ../view/login/login.php?s=false&e=msg-aparecer&m=Ocorreu%20um%20erro%20inesperado%20ao%20cadastrar.');
             return false;
         }
     }

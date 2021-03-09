@@ -12,8 +12,9 @@
 </head>
 <body>
     <?php
-        if (array_key_exists("e", $_GET)) {
+        if (array_key_exists("e", $_GET) && array_key_exists("s", $_GET) && array_key_exists("m", $_GET)) {
             $e = $_GET["e"];
+            
         } else {
         
             $e = "";

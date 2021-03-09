@@ -36,12 +36,12 @@ function login($email, $senha){
         unset($_SESSION['nome']);
         unset($_SESSION['senha']);
         
-        header('Location: ../view/login/login.php?e=msg-aparecer');
+        header('Location: ../view/login/login.php?s=false&e=msg-aparecer&m=Erro,%20email%20ou%20senha%20incorretos.');
 
         return false;
     }}
     catch(PDOException $e){
-        header('Location: ../view/login/login.php?e=msg-aparecer');
+        header('Location: ../view/login/login.php?s=false&e=msg-aparecer&m=Ocorreu%20um%20erro%20inesperado%20ao%20logar.');
         //$e->getMessage();
         return array();
     }
