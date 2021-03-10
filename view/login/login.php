@@ -14,6 +14,8 @@
     <?php
         if (array_key_exists("e", $_GET) && array_key_exists("s", $_GET) && array_key_exists("m", $_GET)) {
             $e = $_GET["e"];
+            $m = $_GET["m"];
+            ($_GET['s'] == 'true')?($s = 'background-color: green;') : ($s = 'background-color: red;');
             
         } else {
         
@@ -68,8 +70,8 @@
             </div>
         </div>
     </div>
-    <div id="msg" class="mensagem-container <?php echo $e ?>">
-    <p class="mensagem">Erro, email ou senha incorretos.</p>
+    <div id="msg" class="mensagem-container <?php echo $e ?>" style="<?php echo $s?>">
+    <p class="mensagem"><?php echo $m ?></p>
         <span onclick="sair()" id="fechar" class=" material-icons">
             close
         </span>

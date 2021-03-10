@@ -15,7 +15,7 @@ if(empty($user->getNome()) || empty($user->getEmail()) || empty($user->getSenha(
     header('Location: ../view/login/login.php?s=false&e=msg-aparecer&m=Erro,%20existem%20campos%20vazios.');
 }else{
     if($user->getSenha() !== $senhaRepetir ){ 
-        header('Location: ../view/login/login.php?e=msg-aparecer');
+        header('Location: ../view/login/login.php?s=false&e=msg-aparecer&m=Erro,%20as%20senhas%20digitadas%20não%20são%20iguais.');
     }else{  
         try {
             $conexao = new conexao();
